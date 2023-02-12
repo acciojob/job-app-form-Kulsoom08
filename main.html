@@ -11,7 +11,7 @@
     <script type="text/javascript" src="./script.js">
 </script>
 
-<form method="get">	
+<form method="post">	
 <div>
 <label for="name">Name*</label>
 <input type="text" id="name" required>	
@@ -21,6 +21,7 @@
 <input type="email" id="email" required>	
 </div>
 <div>
+	<label>Gender</label>
 <label for="male">Male*</label>
 <input type="radio" id="male" name="gender" required>	
 <label for="female">Female*</label>
@@ -30,16 +31,14 @@
 </div>
 <div>
 <label>Laptop Brands*</label>
-<label for="a">Apple</label>	
-<input type="checkbox" id="a" name="x">	
-<label for="b">Asus</label>	
-<input type="checkbox" id="b" name="x">	
-<label for="c">HP</label>	
-<input type="checkbox" id="c" name="x">		
+<select id="laptop">
+	<option>Apple</option>
+	<option>Asus</option>
+	<option>HP</option>
 </div>
 <div>
 <label for="age">Age*</label>
-<input type="text" id="age" required>	
+<input type="number" id="age" required>	
 </div>			
 <div>
 <label for="date">DOB*</label>
